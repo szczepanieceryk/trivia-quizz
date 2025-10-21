@@ -1,25 +1,9 @@
-# Opanuj Frontend: AI Edition - Frontend Bootstrap
+# Trivia Quiz Game
 
-![](./_resources/img/header.png)
+**Try your chances at Quiz game 🏆**
 
-## Co w środku?
+## How does it work?
 
-Bootstrap projektu opartego o następujące narzędzia:
-
-- [editorconfig](https://editorconfig.org/)
-- [eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [React](https://www.npmjs.com/package/@vitejs/plugin-react) (wymień na [Svelte](https://www.npmjs.com/package/@sveltejs/vite-plugin-svelte) lub [Vue](https://www.npmjs.com/package/@vitejs/plugin-vue))
-- [Playwright](https://playwright.dev)
-- [Tailwind](https://tailwindui.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vite.dev/)
-- [Vitest](https://vitest.dev/)
-
-## Pierwsze kroki
-
-```bash
-nvm use
-npm install
-npm run dev
-```
+- Select question category (defaults to random)
+- Optionally you can change difficulty level (Easy / Medium / Hard) by clicking in three dots icon
+- Click 'Show question' button to get your first Quiz question
