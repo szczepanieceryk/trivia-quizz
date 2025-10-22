@@ -1,12 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import DifficultySelect from './DifficultySelect';
+import { DifficultySelectProps } from '../../types/types';
 
-interface MoreOptionsIconProps {
-  isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
-}
-
-const MoreOptionsIcon: React.FC<MoreOptionsIconProps> = ({ isOpen, setIsOpen }) => {
+const MoreOptionsIcon: React.FC<DifficultySelectProps> = ({ isOpen, setIsOpen }) => {
   const popupRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

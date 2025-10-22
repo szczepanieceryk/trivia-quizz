@@ -1,13 +1,10 @@
 import React from 'react';
 import { useDifficulty } from '../../hooks/useDifficulty';
+import { DifficultySelectProps } from '../../types/types';
 
-const difficultyLevels = ['easy', 'medium', 'hard'];
-interface DifficultySelectProps {
-  isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
-}
 const DifficultySelect: React.FC<DifficultySelectProps> = ({ isOpen, setIsOpen }) => {
   const { difficulty, setDifficulty } = useDifficulty();
+  const difficultyLevels = ['easy', 'medium', 'hard'];
 
   return (
     <div className="py-8 px-4 absolute top-0 left-1/2 -translate-x-1/2 border-2 rounded-lg w-[300px] mx-auto border-gray-200 bg-gray-900">
