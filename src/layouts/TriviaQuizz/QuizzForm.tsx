@@ -22,7 +22,10 @@ const QuizForm = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <form onSubmit={handleSubmit} className="relative">
+    <form
+      onSubmit={handleSubmit}
+      className="relative p-2 md:p-6 my-[4rem] rounded-lg border-2 border-gray-200 text-center"
+    >
       <MoreOptionsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
       <div>
         {/* Display category select */}

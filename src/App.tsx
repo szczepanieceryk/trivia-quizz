@@ -1,5 +1,5 @@
 import React, { createContext } from 'react';
-import TriviaQuizz from './layouts/TriviaQuizz/TriviaQuizz';
+import QuizForm from './layouts/TriviaQuizz/QuizzForm';
 import useLocalStorage from './hooks/useLocalStorage';
 
 type DifficultyContextType = {
@@ -17,7 +17,7 @@ const App = () => {
       <div className="max-w-3xl mx-auto">
         <h1 className="text-xl font-bold text-center">🏆 Trivia Quiz Game</h1>
         <DifficultyContext.Provider value={{ difficulty, setDifficulty }}>
-          <TriviaQuizz />
+          <QuizForm />
         </DifficultyContext.Provider>
       </div>
     </div>
