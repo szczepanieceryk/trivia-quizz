@@ -1,5 +1,5 @@
 import React, { createContext } from 'react';
-import QuizForm from './layouts/TriviaQuizz/QuizzForm';
+import QuizForm from './layouts/TriviaQuizz/QuizForm';
 import useLocalStorage from './hooks/useLocalStorage';
 
 type DifficultyContextType = {
