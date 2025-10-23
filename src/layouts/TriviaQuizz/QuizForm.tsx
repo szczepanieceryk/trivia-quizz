@@ -24,7 +24,7 @@ const QuizForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative p-2 md:p-6 my-[4rem] rounded-lg border-2 border-gray-200 text-center"
+      className="relative p-2 md:p-6 my-[4rem] mx-auto rounded-lg border-2 border-gray-200 text-center max-w-[600px]"
     >
       <MoreOptionsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
       <div>
