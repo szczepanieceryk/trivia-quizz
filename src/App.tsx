@@ -9,8 +9,8 @@ const App = () => {
   const [difficulty, setDifficulty] = useLocalStorage('difficulty', 'easy');
 
   return (
-    <div className="mb-4 p-4 bg-gray-900 text-white rounded-lg shadow-sm">
-      <div className="max-w-3xl mx-auto">
+    <div className="md:relative p-4 md:p-8 h-screen bg-gray-900 text-white">
+      <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:left-1/2 md:-translate-x-1/2 max-w-3xl mx-auto w-[350px] md:w-3/4 md:h-[450px]">
         <h1 className="text-xl font-bold text-center">🏆 Trivia Quiz Game</h1>
         <DifficultyContext.Provider value={{ difficulty, setDifficulty }}>
           <QuizForm />
