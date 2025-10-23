@@ -4,7 +4,7 @@ import Button from '../../components/Button';
 import AnswerOptions from './AnswerOptions';
 import CategorySelect from './CategorySelect';
 import MoreOptionsIcon from './MoreOptionsIcon';
-const QuizForm = () => {
+const QuizForm: React.FC = () => {
   const {
     question,
     questionCategory,
