@@ -1,11 +1,7 @@
 import React, { createContext } from 'react';
 import QuizForm from './layouts/TriviaQuizz/QuizForm';
 import useLocalStorage from './hooks/useLocalStorage';
-
-type DifficultyContextType = {
-  difficulty: string;
-  setDifficulty: (difficulty: string) => void;
-};
+import { DifficultyContextType } from './types/types';
 
 export const DifficultyContext = createContext<DifficultyContextType | undefined>(undefined);
 
