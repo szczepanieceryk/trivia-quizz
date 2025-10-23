@@ -24,7 +24,7 @@ const MoreOptionsIcon: React.FC<DifficultySelectProps> = ({ isOpen, setIsOpen })
   return (
     <div ref={popupRef}>
       <div
-        className="flex flex-col flex-wrap gap-[5px] absolute top-2 md:top-0 right-2 cursor-pointer"
+        className="flex flex-col flex-wrap gap-[5px] absolute top-3 md:top-5 right-3 md:right-5 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="h-[5px] w-[5px] rounded-xl bg-white"></div>
