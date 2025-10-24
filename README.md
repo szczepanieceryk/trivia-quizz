@@ -1,6 +1,6 @@
 # Trivia Quiz Game
 
-**Try your chances at Quiz game 🏆**
+**[Try your chances at the Quiz game 🏆](https://szczepanieceryk.github.io/trivia-quizz/)**
 
 ## How does it work?
 
