@@ -53,7 +53,9 @@ const QuizForm: React.FC = () => {
         )}
 
         {/* Display response message */}
-        <span className="block h-[24px] font-medium">{responseMessage ? responseMessage : ''}</span>
+        <span className="block min-h-[24px] font-medium">
+          {responseMessage ? responseMessage : ''}
+        </span>
 
         {/* Display error message */}
         {errorMessage && <span className="block font-medium text-red-400">{errorMessage}</span>}
