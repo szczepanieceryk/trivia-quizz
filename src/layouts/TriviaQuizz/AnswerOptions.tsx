@@ -18,14 +18,14 @@ const AnswerOptions: React.FC<AnswerOptionsProps> = ({
 }) => {
   const getOptionClassName = (answer: string): string => {
     const baseClasses =
-      'p-2 my-2 rounded-lg border-2 min-w-[200px] cursor-pointer transition-colors';
+      'p-2 my-2 rounded-lg bg-gray-300 border-2 min-w-[200px] cursor-pointer transition-colors';
 
     // if user still didn't answerd
     if (!isAnswered) {
       return `${baseClasses} ${
         selectedAnswer === answer
           ? 'border-blue-500 bg-blue-500 text-white'
-          : 'border-gray-300 bg-gray-100 hover:bg-blue-500 hover:text-white text-black'
+          : 'border-gray-300 bg-gray-100 hover:bg-blue-500 hover:text-white text-black transition duration-300 ease-in-out'
       }`;
     }
 
