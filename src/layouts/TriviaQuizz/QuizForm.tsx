@@ -35,9 +35,11 @@ const QuizForm: React.FC = () => {
         />
 
         {/* Display question */}
-        {question && (
-          <span className="block my-4 p-6 rounded-md bg-gray-700 text-white">{question}</span>
-        )}
+        <div className="min-h-[100px]">
+          {question && (
+            <span className="block my-4 p-6 rounded-md bg-gray-700 text-white">{question}</span>
+          )}
+        </div>
 
         {/* Display possible answers */}
         {question && options.length > 0 && (
